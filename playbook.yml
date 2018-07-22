@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  become: yes
+  roles:
+    - { role: base, tags: ['base'] }
+    - { role: ssh, tags: ['ssh'] }
+    - { role: dotfiles, tags: ['dotfiles'] }
+    - { role: fonts, tags: ['fonts'] }
+    - { role: x, tags: ['x'] }
+    - { role: i3, tags: ['i3'] }
+    - { role: cinnamon, tags: ['cinnamon'] }
+    # - { role: gnome, tags: ['gnome'] }
+    - { role: editors, tags: ['editors'] }
+    - { role: browsers, tags: ['browsers'] }
+    - { role: "geerlingguy.docker", tags: ['docker'] }
+    - { role: golang, tags: ['golang'] }
