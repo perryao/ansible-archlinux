@@ -17,6 +17,9 @@ base_packages:
   - rsync
   - lsof
   - jq
+  - dep
+  - vagrant
+  - terraform
 
 editors:
   - vim
@@ -33,6 +36,7 @@ base_fonts:
   - ttf-droid
   - ttf-ubuntu-font-family
   - ttf-inconsolata
+  - otf-font-awesome # for i3 workspace icons
 
 aur_fonts:
   - ttf-signika
@@ -49,3 +53,6 @@ aur_fonts:
 docker_package: docker
 docker_users:
   - mike
+
+go_get:
+  - 

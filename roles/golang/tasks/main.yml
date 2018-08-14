@@ -10,5 +10,10 @@
   tags:
     - user
 
-# - name: Create system go dir
-#   file: path=/usr/local/go state=directory group=golang mode=0775
+# create a go workspace directory if it doesn't exist
+- name: create go workspace
+  file:
+    path: /home/{{ user.name }}/go
+    state: directory
+    owner: "{{ user.name }}"
+    mode: 0755

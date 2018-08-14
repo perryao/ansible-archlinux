@@ -9,6 +9,7 @@
     - { role: x, tags: ['x'] }
     - { role: i3, tags: ['i3'] }
     - { role: cinnamon, tags: ['cinnamon'] }
+    - { role: laptop, tags: ['laptop'] }
     # - { role: gnome, tags: ['gnome'] }
     - { role: editors, tags: ['editors'] }
     - { role: browsers, tags: ['browsers'] }
