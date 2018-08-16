@@ -1,0 +1,6 @@
+- name: download n
+  git: repo={{ n_repo }} dest=/tmp/n
+- name: install n
+  command: make -C /tmp/n
+- name: install node
+  command: n {{ node_version }}

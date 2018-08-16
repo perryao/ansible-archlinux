@@ -4,3 +4,10 @@
   with_items: "{{ base_packages }}"
   tags:
     - packages
+
+- name: ensure code directory
+  file:
+    path: /home/code
+    state: directory
+    owner: "{{ user.name }}"
+    mode: 0755

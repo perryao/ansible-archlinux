@@ -12,6 +12,8 @@ dotfiles:
 base_packages:
   - base-devel
   - pacman-contrib
+  - gnome-keyring
+  - thunar
   - tmux
   - git
   - rsync
@@ -54,5 +56,9 @@ docker_package: docker
 docker_users:
   - mike
 
+GOPATH: /home/{{ user.name }}/go
 go_get:
-  - 
+  - github.com/kubernetes-sigs/aws-iam-authenticator/cmd/aws-iam-authenticator
+
+node_version: latest
+n_repo: https://github.com/tj/n

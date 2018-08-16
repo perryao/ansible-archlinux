@@ -15,3 +15,6 @@
     - { role: browsers, tags: ['browsers'] }
     - { role: "geerlingguy.docker", tags: ['docker'] }
     - { role: golang, tags: ['golang'] }
+    - { role: nodejs, tags: ['nodejs'] }
+    - { role: kubernetes, tags: ['kubernetes'] }
+    - { role: aws, tags: ['aws'] }

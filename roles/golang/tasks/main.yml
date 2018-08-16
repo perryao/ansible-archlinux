@@ -17,3 +17,12 @@
     state: directory
     owner: "{{ user.name }}"
     mode: 0755
+
+- name: "Go-Lang | Run get commands"
+  shell: "/usr/bin/go get -u {{ item }}"
+  environment:
+    GOPATH: "{{ GOPATH }}"
+  with_items: "{{ go_get }}"
+  changed_when: false
+  tags:
+    - go_get

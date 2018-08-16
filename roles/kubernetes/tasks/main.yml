@@ -1,0 +1,6 @@
+- include: kubectl.yml
+
+- name: install minikube
+  aur: name=minikube user={{ user.name }}
+  tags:
+    - aur
