@@ -24,7 +24,7 @@ base_packages:
   - terraform
 
 editors:
-  - vim
+  - gvim # comes with +clipboard support
 
 base_fonts:
   - terminus-font
