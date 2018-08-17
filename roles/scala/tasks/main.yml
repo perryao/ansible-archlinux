@@ -1,0 +1,9 @@
+---
+- name: install scala
+  pacman: name=scala state=present
+
+- name: install sbt
+  pacman: name=sbt state=present
+
+- name: install mill
+  aur: name=mill user={{ user.name }}

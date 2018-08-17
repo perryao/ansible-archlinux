@@ -1,0 +1,5 @@
+---
+- name: install openjdk
+  pacman: name=jdk8-openjdk state=present
+  tags:
+    - java
