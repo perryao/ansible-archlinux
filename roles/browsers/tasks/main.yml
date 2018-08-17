@@ -8,3 +8,8 @@
   pacman: name=chromium state=present
   tags:
     - chromium
+
+- name: Install Chrome
+  aur: name=google-chrome user={{ user.name }}
+  tags:
+    - chrome
