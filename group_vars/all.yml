@@ -11,6 +11,7 @@ dotfiles:
 
 base_packages:
   - base-devel
+  - bind-tools
   - pacman-contrib
   - gnome-keyring
   - thunar
