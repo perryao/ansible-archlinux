@@ -12,6 +12,7 @@ dotfiles:
 base_packages:
   - base-devel
   - bind-tools
+  - compton
   - pacman-contrib
   - gnome-keyring
   - thunar
@@ -23,6 +24,7 @@ base_packages:
   - dep
   - vagrant
   - terraform
+  - xautolock
 
 editors:
   - gvim # comes with +clipboard support
@@ -58,6 +60,7 @@ docker_users:
   - mike
 
 GOPATH: /home/{{ user.name }}/go
+go_version: 1.11
 go_get:
   - github.com/kubernetes-sigs/aws-iam-authenticator/cmd/aws-iam-authenticator
 

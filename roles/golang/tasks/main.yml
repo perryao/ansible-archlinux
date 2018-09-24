@@ -1,6 +1,9 @@
 ---
-- name: Install go
-  pacman: name=go state=present
+- name: download and unpack go
+  unarchive:
+    src: "https://dl.google.com/go/go{{ go_version }}.linux-amd64.tar.gz"
+    dest: /usr/local
+    remote_src: yes
 
 - name: Create system go group
   group: name=golang state=present
@@ -19,7 +22,7 @@
     mode: 0755
 
 - name: "Go-Lang | Run get commands"
-  shell: "/usr/bin/go get -u {{ item }}"
+  shell: "/usr/local/go/bin/go get -u {{ item }}"
   environment:
     GOPATH: "{{ GOPATH }}"
   with_items: "{{ go_get }}"

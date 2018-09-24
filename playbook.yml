@@ -10,9 +10,11 @@
     - { role: i3, tags: ['i3'] }
     - { role: cinnamon, tags: ['cinnamon'] }
     - { role: laptop, tags: ['laptop'] }
+    - { role: sound, tags: ['sound'] }
     # - { role: gnome, tags: ['gnome'] }
     - { role: editors, tags: ['editors'] }
     - { role: browsers, tags: ['browsers'] }
+    - { role: slack, tags: ['slack'] }
     - { role: "geerlingguy.docker", tags: ['docker'] }
     - { role: golang, tags: ['golang'] }
     - { role: nodejs, tags: ['nodejs'] }

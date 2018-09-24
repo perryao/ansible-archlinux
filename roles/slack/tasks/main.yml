@@ -1,0 +1,5 @@
+---
+- name: install slack-desktop
+  aur: name=slack-desktop user={{ user.name }}
+  tags:
+    - slack

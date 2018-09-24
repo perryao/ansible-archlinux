@@ -13,3 +13,20 @@
     mode: 0755
   tags:
     - kubectl
+
+- name: download and unpack helm
+  unarchive:
+    src: "https://storage.googleapis.com/kubernetes-helm/helm-v2.10.0-linux-amd64.tar.gz"
+    dest: /tmp
+    remote_src: yes
+  tags:
+    - helm
+
+- name: move helm
+  copy:
+    remote_src: yes
+    src: /tmp/linux-amd64/helm
+    dest: /usr/local/bin/helm
+    mode: 0755
+  tags:
+    - helm
