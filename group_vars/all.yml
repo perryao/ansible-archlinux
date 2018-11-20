@@ -42,6 +42,8 @@ base_fonts:
   - ttf-ubuntu-font-family
   - ttf-inconsolata
   - otf-font-awesome # for i3 workspace icons
+  - ttf-fira-code
+  - ttf-hack
 
 aur_fonts:
   - ttf-signika
