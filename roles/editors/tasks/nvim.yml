@@ -1,0 +1,26 @@
+- name: clone neovim
+  git:
+    repo: https://github.com/neovim/neovim.git
+    dest: /tmp/neovim
+  register: gitclone
+  tags:
+    - editors
+    - nvim
+
+- name: build neovim
+  make:
+    chdir: /tmp/neovim
+    params:
+      CMAKE_BUILD_TYPE: RelWithDebInfo
+  tags:
+    - editors
+    - nvim
+
+- name: install neovim
+  make:
+    chdir: /tmp/neovim
+    target: install
+  become: yes
+  tags:
+    - editors
+    - nvim

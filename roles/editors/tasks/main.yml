@@ -2,3 +2,5 @@
 - name: Install editors
   pacman: name={{ item }} state=present
   with_items: "{{ editors }}"
+
+- include: nvim.yml
