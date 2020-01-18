@@ -25,6 +25,7 @@ base_packages:
   - vagrant
   - terraform
   - xautolock
+  - duplicity # for backups
 
 editors:
   - gvim # comes with +clipboard support
