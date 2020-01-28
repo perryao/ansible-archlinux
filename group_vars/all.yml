@@ -25,9 +25,18 @@ base_packages:
   - vagrant
   - terraform
   - xautolock
+  - xclip
+  - python-pip
+  - rofi
+  - feh
 
-editors:
-  - gvim # comes with +clipboard support
+aur_packages:
+  - polybar
+  - urxvt-resize-font-git
+
+editors: []
+  # - gvim # comes with +clipboard support
+  # - neovim
 
 base_fonts:
   - terminus-font
@@ -63,8 +72,8 @@ docker_users:
 
 GOPATH: /home/{{ user.name }}/go
 go_version: 1.11
-go_get:
-  - github.com/kubernetes-sigs/aws-iam-authenticator/cmd/aws-iam-authenticator
+go_get: {}
+  # - github.com/kubernetes-sigs/aws-iam-authenticator/cmd/aws-iam-authenticator
 
 node_version: latest
 n_repo: https://github.com/tj/n

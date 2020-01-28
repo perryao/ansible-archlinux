@@ -1,9 +1,14 @@
 ---
 - name: Install base packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ base_packages }}"
+  pacman: name={{ base_packages }} state=present
   tags:
     - packages
+
+- name: Install AUR packages
+  aur: name={{ item }} user={{ user.name }}
+  with_items: "{{ aur_packages }}"
+  tags:
+    - aur
 
 - name: ensure code directory
   file:
@@ -11,3 +16,11 @@
     state: directory
     owner: "{{ user.name }}"
     mode: 0755
+
+- name: Manually create the initial virtualenv
+  command:
+    cmd: python -m venv /home/mike/venvs/aws
+    creates: "/home/mike/venvs/aws"
+  tags:
+    - python
+    - venv
