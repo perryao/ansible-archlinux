@@ -4,3 +4,4 @@
   with_items: "{{ editors }}"
 
 - include: nvim.yml
+- include: vscode.yml

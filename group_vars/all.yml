@@ -72,12 +72,22 @@ aur_fonts:
   - ttf-courier-prime
   - ttf-heuristica
 
+vscode:
+  extensions:
+    - vscodevim.vim
+    - esbenp.prettier-vscode
+    - coenraads.bracket-pair-colorizer-2
+    - formulahendry.auto-rename-tag
+    - christian-kohler.path-intellisense
+    - eamodio.gitlens
+    - aaron-bond.better-comments
+
 docker_package: docker
 docker_users:
   - mike
 
 GOPATH: /home/{{ user.name }}/go
-go_version: 1.11
+go_version: 1.13.7
 go_get: {}
   # - github.com/kubernetes-sigs/aws-iam-authenticator/cmd/aws-iam-authenticator
 
