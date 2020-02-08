@@ -3,6 +3,7 @@
   become: yes
   roles:
     - { role: base, tags: ['base'] }
+    - { role: gnupg, tags: ['gnupg'] }
     - { role: ssh, tags: ['ssh'] }
     - { role: dotfiles, tags: ['dotfiles'] }
     - { role: fonts, tags: ['fonts'] }
@@ -11,7 +12,6 @@
     - { role: cinnamon, tags: ['cinnamon'] }
     - { role: laptop, tags: ['laptop'] }
     - { role: sound, tags: ['sound'] }
-    # - { role: gnome, tags: ['gnome'] }
     - { role: editors, tags: ['editors'] }
     - { role: browsers, tags: ['browsers'] }
     - { role: slack, tags: ['slack'] }

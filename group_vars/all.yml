@@ -9,12 +9,17 @@ dotfiles:
   destination: dotfiles
   rcup_flags: -fx README.md
 
+gnupg:
+    enable_agent: True
+    emulate_ssh: True
+
 base_packages:
   - base-devel
   - bind-tools
   - compton
   - pacman-contrib
   - gnome-keyring
+  - gnome-screenshot
   - thunar
   - tmux
   - git
@@ -33,6 +38,7 @@ base_packages:
 aur_packages:
   - polybar
   - urxvt-resize-font-git
+  - postman
 
 editors: []
   # - gvim # comes with +clipboard support
