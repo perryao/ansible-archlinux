@@ -100,6 +100,7 @@ vscode:
     - wholroyd.jinja
     - alefragnani.project-manager
     - rust-lang.rust
+    - mauve.terraform
 
 docker_package: docker
 docker_users:
