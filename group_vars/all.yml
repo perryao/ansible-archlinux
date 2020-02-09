@@ -81,6 +81,7 @@ vscode:
     - christian-kohler.path-intellisense
     - eamodio.gitlens
     - aaron-bond.better-comments
+    - visualstudioexptteam.vscodeintellicode
 
 docker_package: docker
 docker_users:
