@@ -78,10 +78,28 @@ vscode:
     - esbenp.prettier-vscode
     - coenraads.bracket-pair-colorizer-2
     - formulahendry.auto-rename-tag
+    - formulahendry.auto-close-tag
     - christian-kohler.path-intellisense
     - eamodio.gitlens
     - aaron-bond.better-comments
     - visualstudioexptteam.vscodeintellicode
+    - ms-azuretools.vscode-docker
+    - scalameta.metals
+    - ms-python.python
+    - redhat.java
+    - ms-vscode.cpptools
+    - ms-vscode.go
+    - eg2.vscode-npm-script
+    - editorconfig.editorconfig
+    - ms-vsliveshare.vsliveshare
+    - dsznajder.es7-react-js-snippets
+    - redhat.vscode-yaml
+    - ms-vscode.powershell
+    - davidanson.vscode-markdownlint
+    - rebornix.ruby
+    - wholroyd.jinja
+    - alefragnani.project-manager
+    - rust-lang.rust
 
 docker_package: docker
 docker_users:
@@ -92,5 +110,6 @@ go_version: 1.13.7
 go_get: {}
   # - github.com/kubernetes-sigs/aws-iam-authenticator/cmd/aws-iam-authenticator
 
+helm_version: 3.0.3
 node_version: latest
 n_repo: https://github.com/tj/n
