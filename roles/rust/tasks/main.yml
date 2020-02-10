@@ -3,6 +3,9 @@
   pacman: name=rustup state=present
 
 - name: install default toolchain
+  command: rustup toolchain install stable
+
+- name: activate default toolchain
   command: rustup default stable
 
 - name: install rustup components
