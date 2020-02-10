@@ -19,6 +19,7 @@
     - { role: golang, tags: ['golang'] }
     - { role: nodejs, tags: ['nodejs'] }
     - { role: java, tags: ['java'] }
+    - { role: rust, tags: ['rust'] }
     - { role: scala, tags: ['scala'] }
     - { role: kubernetes, tags: ['kubernetes'] }
     - { role: aws, tags: ['aws'] }
