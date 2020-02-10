@@ -39,6 +39,7 @@ aur_packages:
   - polybar
   - urxvt-resize-font-git
   - postman
+  - godot # game engine
 
 editors: []
   # - gvim # comes with +clipboard support
